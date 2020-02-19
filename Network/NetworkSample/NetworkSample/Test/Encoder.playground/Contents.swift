@@ -33,14 +33,4 @@ do{
     print(error)
 }
 
-encoder.keyEncodingStrategy = .convertToSnakeCase
-
-do{
-    let josnData = try encoder.encode(contact) //json문자열을 바이터리 형태로.
-    if let jsonStr = String(data: josnData, encoding: .utf8){
-        print(jsonStr)
-    }
-}catch{
-    print(error)
-}
 
