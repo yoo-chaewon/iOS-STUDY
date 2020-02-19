@@ -86,17 +86,58 @@
             </objects>
             <point key="canvasLocation" x="1089" y="-728"/>
         </scene>
-        <!--View Controller-->
+        <!--Imageview Controller-->
         <scene sceneID="YsB-Uk-VrD">
             <objects>
-                <viewController id="FWh-gs-z5a" sceneMemberID="viewController">
+                <viewController id="FWh-gs-z5a" customClass="ImageviewController" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCZ-j4-qtM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgv-r6-QFi">
+                                <rect key="frame" x="0.0" y="812" width="207" height="50"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="clickStopButton:" destination="FWh-gs-z5a" eventType="touchUpInside" id="leD-mz-PHW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lH2-yv-YnX">
+                                <rect key="frame" x="207" y="812" width="207" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nat-Ud-Xsg"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="clickStartButton:" destination="FWh-gs-z5a" eventType="touchUpInside" id="25W-M2-z26"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="00.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="99U-YP-OuZ">
+                                <rect key="frame" x="107" y="348.5" width="200" height="199"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eHI-rD-aue"/>
+                                    <constraint firstAttribute="height" constant="200" id="nk9-9a-FEx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pgv-r6-QFi" firstAttribute="height" secondItem="lH2-yv-YnX" secondAttribute="height" id="B6I-5a-F2h"/>
+                            <constraint firstItem="Pgv-r6-QFi" firstAttribute="width" secondItem="lH2-yv-YnX" secondAttribute="width" id="F5x-0P-TZ5"/>
+                            <constraint firstItem="Pgv-r6-QFi" firstAttribute="trailing" secondItem="lH2-yv-YnX" secondAttribute="leading" id="NDs-9t-igk"/>
+                            <constraint firstItem="2jr-Qm-0Ze" firstAttribute="bottom" secondItem="lH2-yv-YnX" secondAttribute="bottom" id="NWq-Dn-oMd"/>
+                            <constraint firstItem="2jr-Qm-0Ze" firstAttribute="trailing" secondItem="lH2-yv-YnX" secondAttribute="trailing" id="gJq-U8-l7v"/>
+                            <constraint firstItem="99U-YP-OuZ" firstAttribute="centerX" secondItem="lCZ-j4-qtM" secondAttribute="centerX" id="ojp-CQ-jfu"/>
+                            <constraint firstItem="Pgv-r6-QFi" firstAttribute="leading" secondItem="2jr-Qm-0Ze" secondAttribute="leading" id="ptr-sc-zs5"/>
+                            <constraint firstItem="2jr-Qm-0Ze" firstAttribute="bottom" secondItem="Pgv-r6-QFi" secondAttribute="bottom" id="sCn-BS-lCh"/>
+                            <constraint firstItem="99U-YP-OuZ" firstAttribute="centerY" secondItem="lCZ-j4-qtM" secondAttribute="centerY" id="uGv-Rh-JP5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2jr-Qm-0Ze"/>
                     </view>
                     <navigationItem key="navigationItem" id="eW5-fx-YJG"/>
+                    <connections>
+                        <outlet property="imageView" destination="99U-YP-OuZ" id="mTc-zu-Mp2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THr-U3-js1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,4 +160,7 @@
             <point key="canvasLocation" x="168" y="-729"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="00.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
