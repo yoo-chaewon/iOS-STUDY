@@ -13,8 +13,8 @@
 | 3       | [기본 데이터 타입](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%203.기본%20데이터%20타입.md) | 2020.02.29 | 2020.02.29 |
 | 4       | [Any, AnyObject, nil](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%204.Any%2CAny%20Object%2C%20nil.md) | 2020.02.29 | 2020.02.29 |
 | 5       | [컬렉션 타입(Array, Dictionary, Set)](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%205.컬렉션%20타입(Array%2C%20Dictionary%2C%20Set).md) | 2020.02.29 | 2020.02.29 |
-| 6       | 함수 기본                                                    | 2020.02.29 | 2020.02.29 |
-| 7       | 함수 고급                                                    |            |            |
+| 6       | [함수 기본](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%206.함수%20기본.md) | 2020.02.29 | 2020.02.29 |
+| 7       | 함수 고급                                                    | 2020.02.29 | 2020.02.29 |
 | 8       | 조건문                                                       |            |            |
 | 9       | 반복문                                                       |            |            |
 | 10      | 옵셔널                                                       |            |            |
