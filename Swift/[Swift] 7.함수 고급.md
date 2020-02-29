@@ -94,13 +94,8 @@ print(sayHelloToFriends(me: "yoo"))
 var someFunction: (String, String) -> Void = greeting(to:from:)
 someFunction("eric", "yoo") // Hello eric! I'm yoo
 
-someFunction = greeting(friend:me:)
-someFunction("eric", "yoo") // Hello eric! I'm yoo
-
-
 // 타입이 다른 함수는 할당할 수 없습니다 - 컴파일 오류 발생
 //someFunction = sayHelloToFriends(me: friends:)
-
 
 func runAnother(function: (String, String) -> Void) {
     function("jenny", "mike")
@@ -113,4 +108,4 @@ runAnother(function: greeting(friend:me:))
 runAnother(function: someFunction)
 ```
 
-***\* 스위프트 전반적인 문법에서 띄어쓰기를 신경써야할 때가 많다 ‼️**.
+***\* 스위프트 전반적인 문법에서 띄어쓰기를 신경써야할 때가 많다 ‼️**
