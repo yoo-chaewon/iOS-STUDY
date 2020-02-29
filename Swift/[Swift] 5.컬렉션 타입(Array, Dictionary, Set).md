@@ -11,7 +11,7 @@
 - 멤버가 순서(인덱스)를 가진 리스트 형태의 컬렉션 타입
 - 여러가지 리터럴 문법을 활용할 수 있어 표현 방법이 다양합니다.
 
-```javascript
+```swift
 // 1. Array 선언 및 생성
 var integers: Array<Int> = Array<Int>()
 // 동일한 표현
@@ -66,7 +66,7 @@ let immutableArray = [1, 2, 3]
 
 - Array와 비슷하게 여러가지 리터럴 문법을 활용할 수 있어 표현 방법이 다양합니다.
 
-```javascript
+```swift
 // 1. Dictionary의 선언과 생성
 // Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성
 var anyDictionary: Dictionary<String, Any> = [String: Any]()
@@ -116,7 +116,7 @@ let initalizedDictionary: [String: String] = ["name": "yoo", "gender": "female"]
 
   > 선언 방법 단 하나.
 
-```javascript
+```swift
 // 1. Set 생성 및 선언
 var integerSet: Set<Int> = Set<Int>()
 
