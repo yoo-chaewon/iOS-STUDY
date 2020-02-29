@@ -9,7 +9,7 @@
 | CHAPTER | 내용                                                         | 시작일     | 끝내는 일  |
 | ------- | ------------------------------------------------------------ | ---------- | ---------- |
 | 1       | [명명법 / 콘솔로그 / 문자열 보간법](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%201.명명법%20:%20콘솔로그%20:%20문자열%20보간법.md) | 2020.02.29 | 2020.02.29 |
-| 2       | 상수와 변수                                                  | 2020.02.29 | 2020.02.29 |
+| 2       | [상수와 변수](https://github.com/yoo-chaewon/iOS-STUDY/blob/master/Swift/%5BSwift%5D%202.상수와%20변수.md) | 2020.02.29 | 2020.02.29 |
 | 3       | 기본 데이터 타입                                             |            |            |
 | 4       | Any, AnyObject, nil                                          |            |            |
 | 5       | 컬렉션 타입(Array, Dictionary, Set)                          |            |            |
