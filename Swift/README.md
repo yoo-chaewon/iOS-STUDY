@@ -2,9 +2,13 @@
 
 [Swift 프로그래밍 입문]
 
+[Apple Programming Language Guide]( https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+
+[API Design Guidelines]( https://swift.org/documentation/api-design-guidelines/)
+
 | CHAPTER | 내용                                | 시작일     | 끝내는 일  |
 | ------- | ----------------------------------- | ---------- | ---------- |
-| 1       | 명명법 / 콘솔로그 / 문자열 보간법   |            |            |
+| 1       | 명명법 / 콘솔로그 / 문자열 보간법   | 2020.02.29 | 2020.02.29 |
 | 2       | 상수와 변수                         |            |            |
 | 3       | 기본 데이터 타입                    |            |            |
 | 4       | Any, AnyObject, nil                 |            |            |
@@ -24,7 +28,7 @@
 | 18      | 프로퍼티                            |            |            |
 | 19      | 프로퍼티 감시자                     |            |            |
 | 20      | 상속                                |            |            |
-| 21      | 인스턴스 생성 / 소멸 (init/deinit)  | 2020.02.29 | 2020.02.29 |
+| 21      | 인스턴스 생성 / 소멸 (init/deinit)  |            |            |
 | 22      | 옵셔널 체이닝과 nil병합             |            |            |
 | 23      | 타입 캐스팅                         |            |            |
 | 24      | assert / guard                      |            |            |
