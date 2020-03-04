@@ -109,7 +109,7 @@ struct Money {
             return dollar * currencyRate
         }
         set {
-            dollar = newValue / currencyRate
+            dollar = newValue / currencyRate//새로운 값 newValue로 받아짐.
         }
     }
 }
