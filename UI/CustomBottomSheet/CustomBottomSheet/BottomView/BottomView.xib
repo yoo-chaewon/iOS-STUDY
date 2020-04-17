@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RC7-HZ-Ql0" userLabel="Bottom View" customClass="BottomView" customModule="CustomBottomSheet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-Eo-a6f">
+                    <rect key="frame" x="0.0" y="612" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEg-J4-fo4">
+                            <rect key="frame" x="192.5" y="14.5" width="29" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU9-bm-YRM">
+                            <rect key="frame" x="359" y="10" width="45" height="30"/>
+                            <state key="normal" title="cancel"/>
+                            <connections>
+                                <action selector="Cancel:" destination="RC7-HZ-Ql0" eventType="touchUpInside" id="xQC-Ta-7jU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uU9-bm-YRM" secondAttribute="trailing" constant="10" id="9Lh-of-r4P"/>
+                        <constraint firstAttribute="height" constant="50" id="HoU-Y2-Y3h"/>
+                        <constraint firstItem="uU9-bm-YRM" firstAttribute="centerY" secondItem="dEg-J4-fo4" secondAttribute="centerY" id="YSf-7B-gDe"/>
+                        <constraint firstItem="dEg-J4-fo4" firstAttribute="centerX" secondItem="RQO-Eo-a6f" secondAttribute="centerX" id="r1B-JJ-ujb"/>
+                        <constraint firstItem="dEg-J4-fo4" firstAttribute="centerY" secondItem="RQO-Eo-a6f" secondAttribute="centerY" id="uC5-2W-ROi"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERS-UQ-hW7">
+                    <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="plD-OB-vQL"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="RQO-Eo-a6f" firstAttribute="trailing" secondItem="ERS-UQ-hW7" secondAttribute="trailing" id="Ksv-y5-jS5"/>
+                <constraint firstItem="MdK-s0-ieF" firstAttribute="trailing" secondItem="ERS-UQ-hW7" secondAttribute="trailing" id="UDn-m1-zlS"/>
+                <constraint firstItem="ERS-UQ-hW7" firstAttribute="leading" secondItem="MdK-s0-ieF" secondAttribute="leading" id="dbt-lg-vnz"/>
+                <constraint firstItem="ERS-UQ-hW7" firstAttribute="top" secondItem="RQO-Eo-a6f" secondAttribute="bottom" id="gBM-tY-S8h"/>
+                <constraint firstItem="MdK-s0-ieF" firstAttribute="bottom" secondItem="ERS-UQ-hW7" secondAttribute="bottom" id="pop-ow-tc9"/>
+                <constraint firstItem="RQO-Eo-a6f" firstAttribute="leading" secondItem="ERS-UQ-hW7" secondAttribute="leading" id="wTt-K3-4Ly"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="MdK-s0-ieF"/>
+            <connections>
+                <outlet property="headerTitleLabel" destination="dEg-J4-fo4" id="t7C-ch-DrE"/>
+                <outlet property="tableView" destination="ERS-UQ-hW7" id="x2f-HT-POF"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="5"/>
+        </view>
+    </objects>
+</document>
