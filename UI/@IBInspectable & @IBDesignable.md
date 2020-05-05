@@ -1,5 +1,7 @@
 # @IBInspectable & @IBDesignable
 
+##### ⭐️ 인터페이스 빌더에서 실시간 렌더링을 통한 커스텀 뷰 만들기⭐️ 
+
 ### 👩‍💻 @IBInspectable
 
 - inspector를 보조할 수 있다.
